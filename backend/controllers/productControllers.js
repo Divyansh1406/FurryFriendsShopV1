@@ -1,5 +1,5 @@
-import asyncHandler from "../middleware/asynchandler.js";
-// import { notFound,errorHandler } from "./middleware/errorMiddleware.js";
+const asyncHandler = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next); // import { notFound,errorHandler } from "./middleware/errorMiddleware.js";
 import Product from "../models/productModel.js";
 
 // @desc    Fetch all products

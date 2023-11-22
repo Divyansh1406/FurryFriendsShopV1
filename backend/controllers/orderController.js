@@ -1,4 +1,5 @@
-import asyncHandler from "../middleware/asynchandler.js";
+const asyncHandler = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next);
 import Order from "../models/orderModel.js";
 
 // @desc    Create new order

@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
-import asyncHandler from "./asyncHandler.js";
+const asyncHandler = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next);
 import User from "../models/userModel.js";
 
 // User must be authenticated
