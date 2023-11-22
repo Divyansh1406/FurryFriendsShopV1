@@ -7,7 +7,7 @@ const router = express.Router();
 const storage = multer.diskStorage({
   //diskstorage to store on server
   destination(req, file, cb) {
-    cb(null, "uploads/"); //cb means callback //null if for error
+    cb(null, "images/"); //cb means callback //null if for error
   },
   filename(req, file, cb) {
     cb(
