@@ -7,6 +7,7 @@ import { logout } from "../slices/authSlice";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import SearchBox from "./SearchBox";
+import { Button } from "bootstrap";
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
@@ -33,7 +34,7 @@ const Header = () => {
           </LinkContainer>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <button>Apply For Pet Adoption</button>
+              <Button>Apply For Pet Adoption</Button>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
