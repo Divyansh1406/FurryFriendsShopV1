@@ -31,7 +31,7 @@ const Header = () => {
               <img src={logo} alt="FurryFriends" height={30} /> FurryFriends
             </Navbar.Brand>
           </LinkContainer>
-          <LinkContainer to="/">
+          <a href="https://forms.gle/d6aUQi7RhJMfw4VG9" target="_blank">
             <Navbar.Brand>
               <button
                 style={{
@@ -55,7 +55,7 @@ const Header = () => {
                 Apply For Pet Adoption
               </button>
             </Navbar.Brand>
-          </LinkContainer>
+          </a>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
