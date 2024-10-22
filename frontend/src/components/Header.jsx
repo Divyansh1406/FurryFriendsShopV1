@@ -31,6 +31,11 @@ const Header = () => {
               <img src={logo} alt="FurryFriends" height={30} /> FurryFriends
             </Navbar.Brand>
           </LinkContainer>
+          <LinkContainer to="/">
+            <Navbar.Brand>
+              <Button>Apply For Pet Adoption</Button>
+            </Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
