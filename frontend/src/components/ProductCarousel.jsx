@@ -44,7 +44,7 @@ const ProductCarousel = () => {
               src={product.image}
               alt={product.name}
               fluid
-              style={{ width: "100vw" }}
+              style={{ objectFit: "cover" }}
             />
             <Carousel.Caption className="carousel-caption">
               <h2 className="text-white text-left">{product.headline}</h2>
