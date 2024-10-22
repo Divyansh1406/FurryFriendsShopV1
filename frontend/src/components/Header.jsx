@@ -7,7 +7,6 @@ import { logout } from "../slices/authSlice";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import SearchBox from "./SearchBox";
-import { Button } from "bootstrap";
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
@@ -33,7 +32,29 @@ const Header = () => {
             </Navbar.Brand>
           </LinkContainer>
           <LinkContainer to="/">
-            <Button>Apply For Pet Adoption</Button>
+            <Navbar.Brand>
+              <button
+                style={{
+                  backgroundColor: "#007bff", // Blue color
+                  color: "#fff", // White text color
+                  border: "none",
+                  borderRadius: "25px", // Rounded button
+                  padding: "10px 20px",
+                  fontSize: "16px",
+                  cursor: "pointer",
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Elevation effect
+                  transition: "all 0.3s ease-in-out", // Smooth hover effect
+                }}
+                onMouseOver={(e) =>
+                  (e.target.style.boxShadow = "0px 6px 8px rgba(0, 0, 0, 0.2)")
+                }
+                onMouseOut={(e) =>
+                  (e.target.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)")
+                }
+              >
+                Apply For Pet Adoption
+              </button>
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
