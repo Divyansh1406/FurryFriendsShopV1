@@ -33,9 +33,7 @@ const Header = () => {
             </Navbar.Brand>
           </LinkContainer>
           <LinkContainer to="/">
-            <Navbar.Brand>
-              <Button>Apply For Pet Adoption</Button>
-            </Navbar.Brand>
+            <Button>Apply For Pet Adoption</Button>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
