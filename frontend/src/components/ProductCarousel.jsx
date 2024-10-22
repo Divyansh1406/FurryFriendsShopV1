@@ -39,7 +39,7 @@ const ProductCarousel = () => {
     <Carousel pause="hover" className="bg-light mb-4">
       {productz.map((product) => (
         <Carousel.Item key={product._id}>
-          <Link to={`{product.linkto}`}>
+          <Link to={product.linkto}>
             <Image
               src={product.image}
               alt={product.name}
