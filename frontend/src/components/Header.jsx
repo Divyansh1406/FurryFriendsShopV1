@@ -33,7 +33,7 @@ const Header = () => {
           </LinkContainer>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <Button>Apply For Pet Adoption</Button>
+              <button>Apply For Pet Adoption</button>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
