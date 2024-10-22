@@ -39,7 +39,7 @@ const ProductCarousel = () => {
     <Carousel pause="hover" className="bg-light mb-4">
       {productz.map((product) => (
         <Carousel.Item key={product._id}>
-          <Link to={product.linkto}>
+          <a href={product.linkto}>
             <Image
               src={product.image}
               alt={product.name}
@@ -47,9 +47,9 @@ const ProductCarousel = () => {
               style={{ height: "60vh" }}
             />
             <Carousel.Caption className="carousel-caption">
-              <h2 className="text-white text-left">{product.headline}</h2>
+              <h2 className="text-white text-center">{product.headline}</h2>
             </Carousel.Caption>
-          </Link>
+          </a>
         </Carousel.Item>
       ))}
     </Carousel>
